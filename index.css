@@ -1,0 +1,498 @@
+@charset "utf-8";
+html {
+    max-width: 1920px;
+
+}
+body {
+    max-width: 1920px;
+    background: #999;
+}
+.row {
+    max-width: 100%;
+}
+.section {
+    background: #999;
+}
+/* header 구역 */
+
+.header {
+    width: 1920px;
+    height: 80px;
+    margin:0 auto;
+    position: fixed;
+    z-index: 99999999;
+}
+.header {
+    background: #aaa;
+}
+.logo {
+    float: left;
+    margin-top: 25px;
+    text-align: center;
+    width: 50%;
+}
+.logo h1 {
+    /* padding-top: 30px; */
+    font-size: 30px;
+    color:#000;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* nav 박스 구역 */
+
+.nav {
+    float: right;
+    margin-top: 40px;
+    width: 40%;
+}
+.nav ul li {
+    display: inline;
+    margin:0px 20px;
+}
+/* section 구역 시작 */
+.article1 {
+    position: relative;
+}
+
+.article1 .main {
+    height: 100vh;
+    position: relative;
+}
+.article1 .main .maintext1 {
+    position:absolute;
+    top: 50%; left: 25%;
+    transform: translate(-50%,-20%);
+    text-align: center;
+}
+.article1 .main .maintext1 h2 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.article1 .main .maintext1 p {
+    font-size: 20px;
+    padding: 10px 0;
+}
+.article1 .main .maintext2 {
+    position: absolute;
+    top: 45%; left: 55%;
+    transform: translate(-50%,-20%);
+}
+.article1 .main .maintext2 p {
+    font-size: 200px;
+}
+
+.article1 .main .maintext3 {
+    position: absolute;
+    top: 47%; left: 73%;
+    transform: translate(-50%,-20%);
+}
+.article1 .main .maintext3 p {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.article1 .img .img1 {
+    position: absolute;
+    font-size: 300px;
+    left: -10%;
+    z-index: 9999999;
+    animation-name: rotate;
+    animation-duration: 17s;
+    animation-iteration-count:infinite;
+}
+.article1 .img .img2 {
+    position: absolute;
+    font-size: 350px;
+    left:-15%; bottom:0%;
+    z-index: 9999999;
+    animation-name: rotate;
+    animation-duration: 13s;
+    animation-iteration-count:infinite;
+}
+.article1 .img .img3 {
+    position: absolute;
+    font-size: 450px;
+    right:-10%;
+    z-index: 9999999;
+    animation-name: rotate;
+    animation-duration: 15s;
+    animation-iteration-count:infinite;
+}
+
+
+/* article2 시작 */
+
+.article2 .skills{
+    height: 100vh;
+    position: relative;
+}
+/* article2 text 시작 */
+.article2 .text {
+    text-align: center;
+    height: auto;
+    font-size: 50px;
+    font-weight: bold;
+    border-top: 2px solid #888;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* article2 skillscontainer 시작 */
+
+.article2 .skillscontainer {
+    text-align: center;
+    height: 70%;
+    font-size: 20px;
+    width: 50%;
+    float: left;
+    border-right: 2px solid #888;
+}
+.article2 .skillscontainer div {
+    display: inline-block;
+    /* border: 1px solid #000; */
+    width: 15%;
+    height: 70%;
+}
+.article2 .skillscontainer .score {
+    position: relative;
+    /* height: 80%; */
+}
+
+.article2 .skillscontainer .myscore {
+    position: absolute;
+    bottom: 0; left: 50%;
+    width: 40%;
+    transform: translate(-50%);
+    font-size: 10px;
+}
+.article2 .skillscontainer .html .myscore {
+    background: #000;
+    height: 80%;
+    animation: htmlani 1s both 0s;
+}
+.article2 .skillscontainer .css .myscore {
+    background: #000;
+    height: 60%;
+    animation: cssani 1s both 0.2s;
+}
+.article2 .skillscontainer .jquery .myscore{
+    background: #000;
+    height: 50%;
+    animation: jqueryani 1s both 0.4s;
+}
+.article2 .skillscontainer .java .myscore{
+    background: #000;
+    height: 20%;
+    animation: javaani 1s both 0.6s;
+}
+@keyframes htmlani {
+    0% {height: 0%;}
+    100% {height: 80%;}
+}
+@keyframes cssani {
+    0% {height: 0%;}
+    100% {height: 60%;}
+}
+@keyframes jqueryani {
+    0% {height: 0%;}
+    100% {height: 50%;}
+}
+@keyframes javaani {
+    0% {height: 0%;}
+    100% {height: 20%;}
+}
+.article2 .skillscontainer p {
+    margin-top: 20px;
+}
+/* skillcareer 시작 */
+
+.skillscareer {
+    position: absolute;
+    top: 30%; left:60%;
+    text-align: left;
+}
+.skillscareer h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.skillscareer ul {
+    padding: 20px 0;
+    font-size: 20px;
+    list-style-type: disc;
+}
+.skillscareer ul li {
+    padding: 10px 0px;
+}
+
+.skillimg {
+    position: absolute;
+    font-size: 450px;
+    right:-10%;
+    z-index: 9999999;
+    animation-name: rotate;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+}
+/* article3 시작 */
+.article3 .portfolio {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.article3 .portfolio .porttext h2 {
+    border-top: 2px solid #888;
+    padding-top: 100px;
+    font-size: 50px;
+}
+.article3 .portfolio .porttext p {
+    padding: 15px;
+    font-size: 20px;
+}
+
+/* article3 portfolios 시작 */
+.article3 .portfolio .portfolios {
+    width: 100%;
+
+}
+.article3 .portfolio .portfolios .port {
+    float: left;
+    display:block;
+    width: 20%;
+    height: 300px;
+    /* border:1px solid #000; */
+    margin-top: 50px;
+    margin-right: 5%;
+    border-top: 2px solid #888;
+    border-bottom: 2px solid #888;
+}
+.article3 .portfolio .portfolios .port:nth-child(1){
+    margin-left: 14%;
+}
+.article3 .portfolio .portfolios .port ul li:first-child a {
+    display: block;
+    padding: 120px 30px 50px;
+    /* border: 1px solid #000; */
+    font-size: 20px;
+}
+.article3 .portfolio .portfolios .port ul li:last-child {
+    padding-top: 40px;
+}
+
+.article3 .portfolio .portfolios .wedding ul:first-child a{
+    background:url("../img/flowers.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0;
+}
+.article3 .portfolio .portfolios .wedding ul:first-child a:hover {
+    opacity: 0.5; 
+    transition: all 0.8s;
+}
+
+.article3 .portfolio .portfolios .sushi ul li:first-child a {
+    background:url("../img/susi_01.gif") no-repeat center;
+    background-size: cover;
+    opacity: 0;
+}
+.article3 .portfolio .portfolios .sushi ul:first-child a:hover {
+    opacity: 0.5; 
+    transition: all 0.8s;
+}
+
+
+.article3 .portfolio .portfolios .coco ul li:first-child a {
+    background:url("../img/56180477_p06.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0;
+}
+.article3 .portfolio .portfolios .coco ul:first-child a:hover {
+    opacity: 0.5; 
+    transition: all 0.8s;
+}
+
+
+.article3 .portfolio .portfolios .port ul {
+    position: relative;
+}
+.article3 .portfolio .portfolios .port ul li:nth-child(2) {
+    position: absolute;
+    top:120%; left: 50%;
+    transform: translate(-50% ,-50%);
+    font-size: 20px;
+}
+.article3 .portfolio .portfolios .port ul li:nth-child(2) i {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.article3 .portimg {
+    position: relative;
+}
+.article3 .portimg .img1 {
+    position: absolute;
+    font-size: 300px;
+    left: -10%;
+    z-index: 9999999;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+}
+.article3 .portimg .img2 {
+    position: absolute;
+    font-size: 400px;
+    left:85%; top: 110%;
+    z-index: 9999999;
+    animation-name: rotate;
+    animation-duration: 15s;
+    animation-iteration-count:infinite;
+}
+/* article4 시작 */
+
+.article4 .contactme{
+    position: relative;
+    height: 100vh;
+
+}
+.article4 .contact{
+    float: left;
+    position: absolute;
+}
+
+.article4 .contactmain {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 100px;
+    border-top: 2px solid #888;
+}
+.article4 .row {
+    padding-top: 150px;
+    margin-left: 200px;
+    float: left;
+    border-right: 2px solid #888;
+}
+.article4 .form1 {
+    width: 500px;
+    /* border: 1px solid #000; */
+}
+.article4 .form1 p {
+    padding: 20px 0px;
+}
+.article4 .form1 p label {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0px 20px;
+    width: 130px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.article4 .form1 p > input {
+    height: 30px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.article4 .form1 p:nth-child(2) input {
+    width: 94px;
+}
+
+.article4 .form1 p:nth-child(4) label {
+    vertical-align: top;
+}
+.article4 .form1 p:nth-child(4) textarea {
+    width: 200px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+}
+.article4 .form1 p:nth-child(5) {
+    text-align: center;
+}
+.article4 .form1 p:nth-child(5) button {
+    padding: 5px 10px;
+    background: #999;
+}
+
+
+
+.article4 .slidecontainer {
+    float: right;
+    width: 50%;
+    /* border: 1px solid #000; */
+    text-align: center;
+    height: 600px;
+    position: relative;
+}
+.slidecontainer .slick-arrow { 
+    font-size:30px; color:#000; 
+    position:absolute; top:50%; 
+    transform:translateY(-50%); 
+    background:none; 
+    border: none;
+}
+.slidecontainer .prev {
+     left:10%; z-index:999 
+}    
+.slidecontainer .next {
+     right:10% 
+}
+.slidecontainer .slick-dots { 
+    position:absolute; bottom:20px; width:100%;
+    text-align:center;
+}
+.slidecontainer .slick-dots li {
+    display:inline-block; width:100px; 
+    height:3px; background:#000;
+    margin:0 5px; position:relative; 
+}    
+.slidecontainer .slick-dots li button { 
+    width:0%; height:3px; 
+    background:#777; text-indent:-99999px;
+    overflow:hidden;  position:absolute;
+    top:0; left:0; display: none;
+}
+
+
+.article4 .slidecontainer .slidebox .slide  {
+    background: #999;
+    height: 600px;
+    position: relative;
+}
+.article4 .slidecontainer .slidebox .slidetext {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+.article4 .slidecontainer .slidebox .slidetext p {
+    font-size: 20px;
+    padding: 20px 0px;
+    font-family: monospace;
+}
+.article4 .slidecontainer .slidebox .slidetext p:nth-child(1){
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 0px;
+}
+
+
+
+/* footer */
+.footer {
+    text-align: center;
+    background-color: #777;
+    height: 100px;
+}
+.footer p {
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+
+
+
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
